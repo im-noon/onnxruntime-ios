@@ -14,9 +14,9 @@ let package = Package(
             name: "OnnxRuntimeBindings",
             dependencies: ["onnxruntime"],
             path: "objectivec",
+            // No unsafeFlags: SPM rejects them in packages consumed by URL.
             cxxSettings: [
                 .define("SPM_BUILD"),
-                .unsafeFlags(["-fobjc-arc-exceptions"]),
             ],
             linkerSettings: [
                 .linkedLibrary("c++"),
