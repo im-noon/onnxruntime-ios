@@ -22,7 +22,7 @@ let package = Package(
                 .linkedLibrary("c++"),
             ]
         ),
-        .binaryTarget(name: "onnxruntime", url: "https://github.com/im-noon/onnxruntime-ios/releases/download/1.32.0/onnxruntime.xcframework.zip", checksum: "c6e8ca811af21767d41ad5d9a8455202de8e692594c15126155d8a3da84bdebd"),
+        .binaryTarget(name: "onnxruntime", url: "https://github.com/im-noon/onnxruntime-ios/releases/download/1.32.1/onnxruntime.xcframework.zip", checksum: "0305e64c2c32df665cd4e07e451e488e4aae50f1051500e24df6623e93490197"),
     ],
     cxxLanguageStandard: .cxx17
 )
